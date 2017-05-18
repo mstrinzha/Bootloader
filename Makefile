@@ -37,6 +37,8 @@ export COMMON_SRCS	 = bl.c cdcacm.c  usart.c
 # Bootloaders to build
 #
 TARGETS	= \
+	f4by_bl \
+	f4by_mini_bl \
 	aerofcv1_bl \
 	auavx2v1_bl \
 	crazyflie_bl \
@@ -112,7 +114,12 @@ tapv1_bl: $(MAKEFILE_LIST) $(LIBOPENCM3)
 
 aerofcv1_bl: $(MAKEFILE_LIST) $(LIBOPENCM3)
 	make -f Makefile.f4 TARGET_HW=AEROFC_V1 LINKER_FILE=stm32f4.ld TARGET_FILE_NAME=$@
+	
+f4by_bl: $(MAKEFILE_LIST) $(LIBOPENCM3)
+	make -f Makefile.f4 TARGET_HW=F4BY LINKER_FILE=stm32f4.ld TARGET_FILE_NAME=$@
 
+f4by_mini_bl: $(MAKEFILE_LIST) $(LIBOPENCM3)
+	make -f Makefile.f4 TARGET_HW=F4BY_MINI LINKER_FILE=stm32f4.ld TARGET_FILE_NAME=$@
 #
 # Binary management
 #
