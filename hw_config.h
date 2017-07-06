@@ -757,7 +757,7 @@
 # define USBPRODUCTID                   0x0011
 # define BOOT_DELAY_ADDRESS             0x000001a0
 
-# define BOARD_TYPE                     70
+# define BOARD_TYPE                     20
 # define _FLASH_KBYTES                  (*(uint16_t *)0x1fff7a22)
 # define BOARD_FLASH_SECTORS            ((_FLASH_KBYTES == 0x400) ? 11 : 23)
 # define BOARD_FLASH_SIZE               (_FLASH_KBYTES * 1024)
@@ -815,17 +815,17 @@
 # define USBPRODUCTID                   0x0011
 # define BOOT_DELAY_ADDRESS             0x000001a0
 
-# define BOARD_TYPE                     70
+# define BOARD_TYPE                     21
 # define _FLASH_KBYTES                  (*(uint16_t *)0x1fff7a22)
 # define BOARD_FLASH_SECTORS            ((_FLASH_KBYTES == 0x400) ? 11 : 23)
 # define BOARD_FLASH_SIZE               (_FLASH_KBYTES * 1024)
 
 # define OSC_FREQ                       8
 
-# define BOARD_PIN_LED_ACTIVITY         GPIO3
-# define BOARD_PIN_LED_BOOTLOADER       GPIO2
+# define BOARD_PIN_LED_ACTIVITY         GPIO13
+# define BOARD_PIN_LED_BOOTLOADER       GPIO14
 # define BOARD_PORT_LEDS                GPIOE
-# define BOARD_CLOCK_LEDS               RCC_AHB1ENR_IOPEEN
+# define BOARD_CLOCK_LEDS               RCC_AHB1ENR_IOPCEN
 # define BOARD_LED_ON                   gpio_clear
 # define BOARD_LED_OFF                  gpio_set
 
