@@ -60,7 +60,7 @@ all:	$(TARGETS)
 
 clean:
 	cd libopencm3 && make --no-print-directory clean && cd ..
-	rm -f *.elf *.bin
+	rm -f *.elf *.bin *.hex
 
 #
 # Specific bootloader targets.

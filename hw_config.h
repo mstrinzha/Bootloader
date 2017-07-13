@@ -754,7 +754,7 @@
 # define USBMFGSTRING                   "\"Swift-Flyer\""
 # define USBDEVICESTRING                "F4BY BL v2.x"
 # define USBVENDORID                    0x27AC
-# define USBPRODUCTID                   0x0011
+# define USBPRODUCTID                   0x0001
 # define BOOT_DELAY_ADDRESS             0x000001a0
 
 # define BOARD_TYPE                     20
@@ -810,9 +810,9 @@
 # define INTERFACE_USB                  1
 # define INTERFACE_USART                0
 # define USBMFGSTRING                   "\"Swift-Flyer\""
-# define USBDEVICESTRING                "F4BY BL v2.x"
+# define USBDEVICESTRING                "F4BY-MINI (Chicken) BL v3.x"
 # define USBVENDORID                    0x27AC
-# define USBPRODUCTID                   0x0011
+# define USBPRODUCTID                   0x0002
 # define BOOT_DELAY_ADDRESS             0x000001a0
 
 # define BOARD_TYPE                     21
